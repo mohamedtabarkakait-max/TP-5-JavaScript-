@@ -1,0 +1,23 @@
+let nombre1=prompt("donner un nombre ");
+let nombre2=prompt("donner un autre nombre");
+nombre1=parseFloat(nombre1);
+nombre2=parseFloat(nombre2);
+if (isNaN(nombre1) || isNaN(nombre2)){
+    console.log("donner les deux valeure");}
+else{
+
+let s=nombre1+nombre2;
+let p=nombre1*nombre2;
+let q=nombre1-nombre2;
+
+console.log("la somme =", s);
+console.log("la diffrence =", q);
+console.log("produit =", p);
+if ( nombre2!=0){
+        division=nombre1/nombre2;
+        console.log("la division =", division);}
+else{
+        console.log("impossible de divier par 0");
+        }
+
+}
