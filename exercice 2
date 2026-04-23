@@ -1,0 +1,23 @@
+let nombre=Math.floor(Math.random()*10)+1;
+let n1=prompt("enter un nombre");
+let tentative=0;
+let proposition=0;
+do{
+    proposition=prompt("enter un nombre entre 1 et 2 :");
+   proposition = parseInt(proposition);
+    tentative++;
+   
+    
+
+    if (proposition<nombre){
+        console.log("plus grand");
+    }
+    if(proposition>proposition){
+         console.log("plus petit");
+    }
+
+
+    }while(proposition==nombre);
+   
+    
+console.log("good job tu as trouver la bonne reponce dans ",tentative, );
