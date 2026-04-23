@@ -1,9 +1,9 @@
 let nombre=Math.floor(Math.random()*10)+1;
-let n1=prompt("enter un nombre");
+
 let tentative=0;
 let proposition=0;
 do{
-    proposition=prompt("enter un nombre entre 1 et 2 :");
+    proposition=prompt("enter un nombre entre 1 et 10:");
    proposition = parseInt(proposition);
     tentative++;
    
@@ -12,12 +12,12 @@ do{
     if (proposition<nombre){
         console.log("plus grand");
     }
-    if(proposition>proposition){
+    if(proposition>nombre){
          console.log("plus petit");
     }
 
 
-    }while(proposition==nombre);
+    }while(proposition!==nombre);
    
     
 console.log("good job tu as trouver la bonne reponce dans ",tentative, );
