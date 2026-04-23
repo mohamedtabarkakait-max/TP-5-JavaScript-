@@ -1,0 +1,21 @@
+let question=[["qui la capitale du maroc : ","rabat"],["qulle sont les coleure du drapeau marocain: ","rouge et vert" ],
+["qelle est la capital du france :","paris"],["qulle le meilleure joueur du monde","cristiano ronaldo"]];
+function lancerQuiz(){
+    let score=0
+    for (let i=0;i<question.length;i++){
+        let question1=question[i][0];
+        let reponsecorrecte=question[i][1].toLowerCase();
+        let reponse_du_personne=prompt(question1);
+        reponse_du_personne= reponse_du_personne.trim().toLowerCase();
+        if (reponse_du_personne===reponsecorrecte){
+            console.log(" reponse juste ");
+            score++;}
+        else {
+           console.log("reponse fausse");}
+        }
+        console.log("votre score est ",score ,"sur",question.length);
+
+        
+        
+        }
+lancerQuiz();
